@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequency Player</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Frequency Player</h1>
+         <h3>Popular frquencies: <br></h3>
+        <div class="preset-buttons">
+            <button onclick="playFrequency(174)">Pain Relief (174 Hz)</button>
+            <button onclick="playFrequency(285)">Healing (285 Hz)</button>
+            <button onclick="playFrequency(396)">Freedom (396 Hz)</button>
+            <button onclick="playFrequency(417)">Transformation (417 Hz)</button>
+            <button onclick="playFrequency(528)">Love (528 Hz)</button>
+            <button onclick="playFrequency(639)">Harmony (639 Hz)</button>
+            <button onclick="playFrequency(741)">Cleansing (741 Hz)</button>
+            <button onclick="playFrequency(852)">Awakening (852 Hz)</button>
+            <button onclick="playFrequency(963)">Divine (963 Hz)</button>
+            
+
+            
+        </div>
+        <div class="frequency-control">
+            
+            <input type="range" min="20" max="20000" value="440" class="slider" id="frequencySlider">
+            <input type="number" id="frequencyInput" min="20" max="20000" value="440" step="0.01">
+            <span>Hz</span>
+            
+            <button style="background-color:brown" onclick="synth.triggerRelease();">Mute</button>
+            <button  style="background-color:#a5932a" onclick="playFrequency(Math.random() * (15000 + 1) )">Random </button>
+        </div>
+        <div id="frequencyInfo"></div>
+            <p id="footertext"></p>Inspired by the movie Vivarium also some tiktok about how frequencies can effect mental health. <a target="_blank" href="https://medium.com/@zerocool.faam/the-effects-of-sound-frequency-on-human-psychology-597ca963414c">Learn More </a>
+            <br><br>Copyright © 2024 Teymur Babayev</p>
+       
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
