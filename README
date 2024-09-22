@@ -1,0 +1,15 @@
+# Frequency Player
+
+This project is a web-based frequency player that allows users to explore and experience the effects of different frequencies on their mental and emotional well-being. The project is built using HTML, CSS, and JavaScript, with the help of the Tone.js library for audio synthesis.
+
+## Features
+
+- Play popular frequencies associated with healing, relaxation, and transformation
+- Adjust the frequency using a slider or input field
+- Get information about the current frequency, including its nearest piano key and its effects on the brain and body
+- Mute and unmute the sound using buttons
+- Generate a random frequency within a specified range
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more information.
