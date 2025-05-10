@@ -9,6 +9,14 @@ body {
     padding: 1rem;
     box-sizing: border-box;
 }
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #9b271e; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+  
 
 .container {
     text-align: center;
